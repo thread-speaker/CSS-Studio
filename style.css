@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 2;
+    padding-left: 30px;
+
+    animation: pulse 5s alternate infinite;
+}
+
+.head_button {
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    height: 100%;
+    transition: height 1s;
+    color: #ffffff;
+
+    animation: inherit;
+}
+
+.head_button:hover {
+    height: 120%;
+}
+
+.head_button:active {
+    background: #007399;
+}
+
+.content {
+    position: relative;
+    top: 30px;
+    height: calc(100% - 30px);
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content p {
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    background-color: #b30900;
+  }
+  100% {
+    background-color: #b35900;
+  }
+}
